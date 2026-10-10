@@ -1,0 +1,47 @@
+.vm-modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15,23,42,0.55);
+  z-index: 99999 !important;
+}
+.vm-modal {
+  width: 520px;
+  max-width: calc(100% - 48px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 0 12px 40px rgba(2,6,23,0.2);
+  position: relative;
+  text-align: center;
+}
+.vm-modal-close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #6b7280;
+}
+.vm-modal-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f0ff;
+  color: #5b3bfd;
+  font-weight: 700;
+}
+.vm-modal-title { margin: 6px 0 8px; font-size: 20px; color: #111827; }
+.vm-modal-message { color: #6b7280; margin-bottom: 18px; line-height: 1.4; }
+.vm-modal-actions { display:flex; gap:12px; justify-content:center; }
+.vm-btn { padding: 10px 18px; border-radius: 8px; cursor: pointer; border: none; font-weight:600; }
+.vm-btn-primary { background: #5b3bfd; color: #fff; }
+.vm-btn-secondary { background: #f3f4f6; color: #111827; }

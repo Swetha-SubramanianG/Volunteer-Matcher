@@ -1,0 +1,123 @@
+.page-navbar {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.page-navbar .nav-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2a2a72;
+}
+
+.page-navbar .nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.page-navbar .nav-item {
+  color: #718096;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+  position: relative;
+  padding: 8px 0;
+}
+
+.page-navbar .nav-item:hover {
+  color: #4b3efc;
+}
+
+.page-navbar .nav-item.active {
+  color: #4b3efc;
+}
+
+.page-navbar .nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #4b3efc;
+}
+
+.page-navbar .nav-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-user-name {
+  color: #4b3efc;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.page-navbar .nav-btn-outline {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  color: #2d3748;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.page-navbar .nav-btn-outline:hover {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.page-navbar .nav-btn-primary {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #5b56ff, #4b3efc);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.page-navbar .nav-btn-primary:hover {
+  background: linear-gradient(90deg, #4b3efc, #3b2fdb);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(75, 62, 252, 0.3);
+}
+
+@media (max-width: 768px) {
+  .page-navbar {
+    padding: 12px 20px;
+    flex-wrap: wrap;
+  }
+
+  .page-navbar .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 16px;
+  }
+
+  .page-navbar .nav-actions {
+    gap: 8px;
+  }
+
+  .page-navbar .nav-btn-outline,
+  .page-navbar .nav-btn-primary {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+  }
+}
+

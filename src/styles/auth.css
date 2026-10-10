@@ -1,0 +1,39 @@
+/* Basic auth page styles (create or expand as needed) */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  background: #f8f8fa;
+  min-height: calc(100vh - 70px);
+}
+
+.auth-card {
+  width: 420px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  padding: 28px;
+}
+
+.auth-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+.tab { flex: 1; padding: 10px 12px; background: transparent; border: none; cursor: pointer; color: #6b6b83; }
+.tab.active { border-bottom: 3px solid #5b3bfd; color: #2b2b3f; font-weight: 600; }
+
+.form-error, .auth-footer { margin-top: 12px; color: #e74c3c; }
+.form-error { background: #fdecea; padding: 10px; border-radius: 6px; }
+
+.auth-form .form-label { display:block; margin-bottom:10px; color:#333; font-weight:600; }
+.form-input { width:100%; padding:10px 12px; border-radius:6px; border:1px solid #e6e6f0; background:#fff; margin-top:8px; box-sizing:border-box; }
+
+.btn-primary {
+  display:block;
+  width:100%;
+  padding:12px 16px;
+  background: linear-gradient(90deg,#5b3bfd,#7a5bff);
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  font-weight:700;
+  margin-top:14px;
+  cursor:pointer;
+}

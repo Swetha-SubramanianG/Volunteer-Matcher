@@ -1,0 +1,118 @@
+.tasks-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tasks-container h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2b2b3f;
+  margin-bottom: 8px;
+}
+
+.tasks-container > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  background: #fff;
+  border: 1px solid #e6e6f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.task-card h3 {
+  font-size: 18px;
+  color: #2b2b3f;
+  margin-bottom: 8px;
+}
+
+.task-location, .task-org {
+  color: #666;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.btn-view-task {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #5b3bfd, #7a5bff);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.task-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.task-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+
+.task-modal h2 {
+  color: #2b2b3f;
+  margin-bottom: 16px;
+}
+
+.task-modal p {
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.btn-apply {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #5b3bfd, #7a5bff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+}

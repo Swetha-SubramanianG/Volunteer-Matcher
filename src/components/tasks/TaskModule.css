@@ -1,0 +1,129 @@
+.task-page-container {
+  min-height: calc(100vh - 80px);
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.task-header-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.task-header-subtitle {
+  text-align: center;
+  color: #718096;
+  font-size: 1rem;
+  margin-bottom: 32px;
+}
+
+.task-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.task-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.priority-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.priority-tag.low {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+.priority-tag.medium {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.priority-tag.high {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.task-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.organization {
+  color: #5a5a89;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.task-details p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.apply-task-btn {
+  width: 100%;
+  padding: 12px 24px;
+  background: linear-gradient(90deg, #5b56ff, #4b3efc);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.apply-task-btn:hover {
+  background: linear-gradient(90deg, #4b3efc, #3b2fdb);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(75, 62, 252, 0.3);
+}
+
+@media (max-width: 768px) {
+  .task-header-title {
+    font-size: 1.75rem;
+  }
+
+  .task-card-grid {
+    grid-template-columns: 1fr;
+  }
+}

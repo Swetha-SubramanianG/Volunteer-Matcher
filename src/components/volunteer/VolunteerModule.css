@@ -1,0 +1,153 @@
+.volunteer-module {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.volunteer-module-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.volunteer-module-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.volunteer-module-subtitle {
+  font-size: 1.125rem;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.volunteer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.volunteer-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  color: #718096;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.1);
+  color: #e53e3e;
+}
+
+.favorite-btn.favorited {
+  color: #e53e3e;
+}
+
+.heart-icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+
+.volunteer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.volunteer-organization {
+  font-size: 0.95rem;
+  color: #718096;
+  margin-bottom: 12px;
+}
+
+.volunteer-description {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.volunteer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.volunteer-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.volunteer-icon {
+  width: 18px;
+  height: 18px;
+  color: #718096;
+  flex-shrink: 0;
+}
+
+.volunteer-apply-btn {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.volunteer-apply-btn:hover {
+  background-color: #2c5aa0;
+}
+
+.volunteer-apply-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .volunteer-module-title {
+    font-size: 2rem;
+  }
+  
+  .volunteer-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+

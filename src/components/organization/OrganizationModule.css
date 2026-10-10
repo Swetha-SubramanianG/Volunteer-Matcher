@@ -1,0 +1,143 @@
+.organization-module {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.organization-module-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.organization-module-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.organization-module-subtitle {
+  font-size: 1.125rem;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.organization-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.organization-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.organization-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.organization-category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #805ad5;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.category-icon {
+  font-size: 1.2rem;
+}
+
+.category-text {
+  color: #805ad5;
+}
+
+.organization-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 16px;
+}
+
+.organization-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.info-icon {
+  width: 16px;
+  height: 16px;
+  color: #718096;
+  flex-shrink: 0;
+}
+
+.organization-description {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.organization-btn {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #805ad5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: auto;
+}
+
+.organization-btn:hover {
+  background-color: #6b46c1;
+}
+
+.organization-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .organization-module-title {
+    font-size: 2rem;
+  }
+  
+  .organization-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  
+  .organization-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+

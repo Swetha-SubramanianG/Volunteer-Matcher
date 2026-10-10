@@ -1,0 +1,85 @@
+.home-container {
+  min-height: calc(100vh - 70px);
+  background: linear-gradient(135deg, #f5f1ff 0%, #fff8f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.home-content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.home-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 280px;
+  min-width: 200px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #5b3bfd, #6f4bff);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(91, 59, 253, 0.3);
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #5b3bfd;
+  border: 2px solid #5b3bfd;
+}
+
+.btn-secondary:hover {
+  background: #f5f1ff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    max-width: 100%;
+  }
+}
